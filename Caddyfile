@@ -1,0 +1,24 @@
+# Reverse proxy: portfolio.local (port 80) -> Next.js dev server (port 3000)
+# Started via `sudo brew services start caddy` so it can bind port 80.
+#
+# This config matches only the "portfolio.local" hostname, so the dashboard is
+# accessible from the local Mac only — NOT exposed to other devices on the LAN.
+# To enable phone/LAN access, see scripts/setup_phone_access.sh (separate opt-in
+# with auth required, since the dashboard contains financial data).
+
+http://portfolio.local {
+    reverse_proxy 127.0.0.1:3000
+}
+
+http://whoop.local {
+    reverse_proxy 127.0.0.1:3001
+}
+
+http://health.local {
+    reverse_proxy 127.0.0.1:3001
+}
+
+# Health dashboard phone access — same WiFi network
+http://:3080 {
+    reverse_proxy 127.0.0.1:3001
+}

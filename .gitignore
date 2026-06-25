@@ -1,0 +1,37 @@
+node_modules/
+.next/
+.venv/
+.env
+.env.local
+.cache/
+*.log
+.DS_Store
+
+# Personal portfolio data -- each user fills in their own from data/example/
+data/holdings.yaml
+data/thesis.md
+data/watchlist.yaml
+data/journal.yaml
+data/catalysts.yaml
+data/declined.yaml
+data/tax-efficiency.yaml
+data/etf-drift-checks.yaml
+data/transactions.yaml
+data/dividends.yaml
+data/cashflows.yaml
+data/robinhood_activity.csv
+
+# Inbox (raw broker exports)
+data/inbox/*
+!data/inbox/README.md
+!data/inbox/.gitkeep
+
+# Example data IS committed
+!data/example/
+
+# Claude skills (personal configuration)
+.claude/
+
+# Build artifacts
+tsconfig.tsbuildinfo
+*.csv

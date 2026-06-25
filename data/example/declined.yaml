@@ -1,0 +1,6 @@
+# Tickers that were evaluated and explicitly declined.
+# Automatically populated when a watchlist item is declined via the dashboard.
+# The thesis-fit scan and Discover tab filter these out.
+# To un-decline, remove the entry here and re-add to watchlist.yaml.
+
+declined: []

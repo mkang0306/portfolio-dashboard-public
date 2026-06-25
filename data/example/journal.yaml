@@ -1,0 +1,11 @@
+# Decision journal. Free-form entries. Edit by hand or append at the top.
+# Each entry: date (YYYY-MM-DD), optional ticker, optional tags, body (markdown ok).
+
+entries:
+  - date: "2026-01-15"
+    ticker: null
+    tags:
+      - portfolio_init
+    body: |
+      Initial portfolio setup. Defined thesis, target allocations, and sell triggers
+      for all positions. Dashboard is live.

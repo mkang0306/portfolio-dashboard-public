@@ -1,0 +1,20 @@
+# Tickers you're watching but don't (yet) hold.
+# Edit by hand; the dashboard reads on every request.
+#
+# Decision lifecycle: WATCH -> CONSIDER -> QUEUE -> (BOUGHT = moved to holdings.yaml) -> (CLOSED)
+# Declining via the dashboard automatically:
+#   1. Logs to journal.yaml with reason
+#   2. Adds to declined.yaml (filters from Discover tab)
+#   3. Removes from this file
+
+watchlist:
+  - ticker: MSFT
+    added: "2026-01-15"
+    status: watch
+    note: Watching for pullback entry. Azure + enterprise AI distribution.
+    buy_if: Pullback >15% from ATH OR forward P/E drops below 25
+    revisit_by: "2026-04-01"
+    target_size_pct: 5
+    tags:
+      - mag7
+      - ai_infrastructure

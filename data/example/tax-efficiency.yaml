@@ -1,0 +1,59 @@
+# Tax Efficiency Tracking Layer
+#
+# Tax drag historically costs 1.6-1.8% annually on US equities (Andrew Ang, WSJ May 2026),
+# compounding to ~36% of final wealth over 30 years. This dwarfs ER (0.03-0.40%).
+#
+# Tax Efficiency Score (1-10):
+#   10 = broad index ETF, near-zero distributions, all qualified (VTI, VOO)
+#    7-9 = factor ETF with moderate turnover (AVUV, AVUS)
+#    4-6 = active ETF with meaningful distributions
+#    1-3 = derivative income / option-strategy ETF (QQQI, YieldMax, JEPI)
+#   Any holding with score <=3: immediate review required
+#
+# Update frequency: annually after year-end distributions are finalized (January/February)
+
+holdings:
+  - ticker: VTI
+    tax_efficiency_score: 10
+    account: taxable
+    account_optimal: true
+    notes: "Vanguard heartbeat structure eliminates virtually all capital gains distributions."
+    distribution_yield_pct: 1.3
+    distribution_breakdown:
+      qualified_pct: 95
+      non_qualified_pct: 5
+      st_cap_gains_pct: 0
+      lt_cap_gains_pct: 0
+      roc_pct: 0
+
+  - ticker: VXUS
+    tax_efficiency_score: 9
+    account: taxable
+    account_optimal: true
+    notes: "International ETF in taxable for foreign tax credit. ~15% withholding on dividends."
+    distribution_yield_pct: 3.0
+    distribution_breakdown:
+      qualified_pct: 70
+      non_qualified_pct: 30
+      st_cap_gains_pct: 0
+      lt_cap_gains_pct: 0
+      roc_pct: 0
+
+  # Individual stocks: score is N/A (they don't distribute unless they pay dividends)
+  - ticker: AAPL
+    tax_efficiency_score: null
+    account: taxable
+    account_optimal: true
+    notes: "Individual stock -- no fund-level distributions. Qualified dividend only."
+    distribution_yield_pct: 0.5
+    distribution_breakdown:
+      qualified_pct: 100
+      non_qualified_pct: 0
+      st_cap_gains_pct: 0
+      lt_cap_gains_pct: 0
+      roc_pct: 0
+
+# Pre-purchase gates:
+#   - Score <=3 in taxable: requires written justification in journal
+#   - Derivative income ETFs: auto-decline unless account is Roth
+#   - ETF replacement candidates: must compare after-tax returns, not just ER

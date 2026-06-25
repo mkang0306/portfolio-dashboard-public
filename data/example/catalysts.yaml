@@ -1,0 +1,20 @@
+# Position-specific catalysts. Free-form -- edit by hand to add product launches,
+# regulatory deadlines, conference dates, etc. that matter for your thesis.
+#
+# Required: date (YYYY-MM-DD), name
+# Optional: ticker (null for sector/macro), type (earnings|corporate|industry|macro|review), impact (high|medium|low), notes
+
+catalysts:
+  - date: "2026-07-25"
+    ticker: AAPL
+    name: Q3 FY2026 earnings
+    type: earnings
+    impact: high
+    notes: Watch services revenue growth rate and iPhone ASP trends
+
+  - date: "2026-10-01"
+    ticker: null
+    name: Quarterly portfolio review
+    type: review
+    impact: high
+    notes: Check all sell triggers, rebalance if drift exceeds threshold

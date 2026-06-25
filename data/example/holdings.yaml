@@ -1,0 +1,72 @@
+# Source of truth for the portfolio dashboard.
+# Edit by hand. Dashboard re-reads on every request.
+# cost_basis is optional (fill in to enable unrealized P/L).
+#
+# sell_triggers: written triggers per thesis discipline rule #1.
+# Three categories:
+#   thesis_break  - condition that invalidates the original investment case
+#   drift         - position exceeds soft/hard cap
+#   opportunity   - a better expression of the same thesis becomes available
+#
+# quarterly_review: next date for boolean trigger check (auto-set to +90 days after last review)
+
+portfolio_rules:
+  max_position_pct: 12       # alert if any position exceeds this
+  amzn_cap_pct: 8            # example: per-ticker cap override
+  single_name_cap_pct: 6     # alert for individual stocks above this
+  drift_threshold_pct: 5     # alert if weight drifts this far from target
+  roth_contribution_target: 7500
+  quarterly_review_next: "2026-10-01"
+
+holdings:
+  - ticker: VTI
+    name: Vanguard Total Stock Market ETF
+    shares: 20
+    cost_basis: 5500.00
+    account: taxable
+    target_pct: 40
+    expense_ratio: 0.0003
+    function: US broad market core
+    thesis: Cheapest, broadest US equity exposure
+    sell_triggers:
+      - type: thesis_break
+        condition: Expense ratio rises above 0.10% OR Vanguard changes index methodology
+      - type: drift
+        condition: Position exceeds 50% of portfolio
+      - type: opportunity
+        condition: A cheaper total-market fund with equivalent tracking launches
+
+  - ticker: VXUS
+    name: Vanguard Total International Stock ETF
+    shares: 30
+    cost_basis: 1800.00
+    account: taxable
+    target_pct: 20
+    expense_ratio: 0.0007
+    function: International diversification
+    thesis: Simple, cheap rest-of-world equity exposure
+    sell_triggers:
+      - type: thesis_break
+        condition: Vanguard changes index methodology or ER exceeds 0.15%
+      - type: drift
+        condition: Position exceeds 30% of portfolio
+
+  - ticker: AAPL
+    name: Apple Inc.
+    shares: 10
+    cost_basis: 1750.00
+    account: taxable
+    target_pct: 10
+    expense_ratio: null
+    function: Tech conviction
+    thesis: Hardware ecosystem moat, services growth
+    sell_triggers:
+      - type: thesis_break
+        condition: Services revenue growth turns negative for 2 consecutive quarters
+      - type: drift
+        condition: Position exceeds 12% of portfolio
+      - type: opportunity
+        condition: A better expression of the same thesis becomes available at lower valuation
+
+  # Add more holdings following the same pattern.
+  # Tip: every position should have at least one sell trigger per category.

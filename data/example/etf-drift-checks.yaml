@@ -1,0 +1,37 @@
+# Thematic ETF Goodhart's Law Drift Checks
+#
+# Every thematic ETF with discretionary/active management has Goodhart's Law risk:
+# the manager's incentives (AUM stability, tracking error minimization) may diverge
+# from the holder's thesis over time. This file defines the quarterly monitoring
+# framework for each thematic ETF position.
+#
+# Cost: ~15 minutes per position per quarter pulling holdings from etf.com.
+# Benefit: catch thesis drift before it costs real money.
+
+checks: []
+
+# Example check (uncomment and customize):
+#
+#  - ticker: ARKK
+#    name: ARK Innovation ETF
+#    thesis: "Disruptive innovation across genomics, fintech, and AI"
+#    frequency: quarterly
+#    method: manual_holdings_review
+#    core_tickers:
+#      - TSLA
+#      - ROKU
+#      - COIN
+#    metric: "Core Innovation % (sum of top disruptive names)"
+#    thresholds:
+#      green: ">=40% in core innovation names"
+#      yellow: "25-40%"
+#      red: "<25%"
+#    consecutive_red_to_sell: 2
+#    baseline:
+#      date: "2026-01-01"
+#      value: "45%"
+#      status: green
+#    exit_procedure:
+#      - "Move to individual stock basket of top holdings"
+#      - "Or switch to a competing thematic ETF"
+#    readings: []
