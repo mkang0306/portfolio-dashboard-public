@@ -25,6 +25,27 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      # Personal portfolio data is gitignored (cost basis). Materialize it from
+      # encrypted repo secrets at runtime. base64-encoded to survive YAML/newlines.
+      # Files are written into the gitignored data/ dir, so the commit step below
+      # (which only adds discover/) never persists them to git history.
+      - name: Write portfolio data from secrets
+        env:
+          HOLDINGS_YAML_B64: ${{ secrets.HOLDINGS_YAML_B64 }}
+          THESIS_MD_B64: ${{ secrets.THESIS_MD_B64 }}
+          DECLINED_YAML_B64: ${{ secrets.DECLINED_YAML_B64 }}
+        run: |
+          mkdir -p data
+          if [ -z "$HOLDINGS_YAML_B64" ] || [ -z "$THESIS_MD_B64" ]; then
+            echo "Required secrets HOLDINGS_YAML_B64 / THESIS_MD_B64 are not set." >&2
+            exit 1
+          fi
+          printf '%s' "$HOLDINGS_YAML_B64" | base64 -d > data/holdings.yaml
+          printf '%s' "$THESIS_MD_B64"     | base64 -d > data/thesis.md
+          if [ -n "$DECLINED_YAML_B64" ]; then
+            printf '%s' "$DECLINED_YAML_B64" | base64 -d > data/declined.yaml
+          fi
+
       - name: Run thesis-fit scan
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
