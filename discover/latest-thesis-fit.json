@@ -1,0 +1,137 @@
+{
+  "summary": "TSM is this week's standout candidate \u2014 textbook AI compute infrastructure fit with an anomalously high 31.8% FCF yield and Q1 revenue +40.6% YoY, yet not directly held, making it the single strongest addition opportunity. CRM has re-rated to a genuine value entry (PE 18.5, FCFy 12.7%) as Agentforce ARR ramps at 169% YoY, offering enterprise AI distribution exposure at a price the thesis can absorb. Structurally, MSFT has drifted to -30.1% off its 52-week high and -20% YTD \u2014 likely below its 5% target weight \u2014 warranting a contributions-first top-up review, not a thesis rethink; separately, DRAM's listed target (13%) exceeds the 12% portfolio cap and should be reconciled.",
+  "candidates": [
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing Co.",
+      "thesis_fit_score": 9,
+      "score_delta": null,
+      "factor_scores": {
+        "value": 9,
+        "quality": 8,
+        "momentum": 7
+      },
+      "portfolio_role": "AI compute conviction",
+      "rationale": "Thesis clause: 'High-conviction AI/tech compute bet (~40% effective Mag 7 + 8% DRAM) on the premise that NVDA, the hyperscaler platforms, and the memory cycle compound above market through the 2020s\u201330s.' TSM is the manufacturing substrate beneath every held Mag 7 name \u2014 NVDA's H100/H200/B100 series, AAPL silicon, and AMD GPUs all flow through TSMC's fabs. It is not held, creating a gap between thesis conviction and exposure. Fundamentals are exceptionally strong: Q1 2026 revenue grew 40.6% YoY with gross margin expanding to 66.2%, and HPC (AI) now represents 61% of revenue. The 31.8% FCF yield is the highest in the entire candidate universe and anomalously high for a company growing at this rate, suggesting the market is still underpricing the duration of the AI capex cycle. TSMC is guiding Q2 revenue of $39\u201340.2B and plans to grow 2nm capacity at ~70% CAGR through 2028. Taiwan geopolitical risk is the primary non-thesis risk, but the 20+ year horizon and thesis acceptance of 'AI/tech concentration' risk supports inclusion. No prior score \u2014 first scan.",
+      "anti_thesis_risks": "1. Taiwan Strait escalation disrupts or destroys fab capacity \u2014 the single largest binary risk; no hedge exists within this portfolio. 2. Intel 18A or Samsung catch up to N2 yields ahead of schedule, eroding TSMC's pricing power on sub-5nm nodes. 3. AI capex cycle turns (hyperscaler CapEx pause) faster than the 20-year horizon absorbs, compressing wafer demand and pricing. 4. US tariffs or export controls targeting Taiwan foundry output increase customer diversification pressure.",
+      "size_suggestion_pct": 5,
+      "recommended_action": "consider",
+      "funded_by": "new contributions"
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "thesis_fit_score": 7,
+      "score_delta": null,
+      "factor_scores": {
+        "value": 8,
+        "quality": 6,
+        "momentum": 3
+      },
+      "portfolio_role": "AI compute conviction",
+      "rationale": "Thesis clause: 'High-conviction AI/tech compute bet' and 'Azure + enterprise AI distribution + Office moat' (MSFT rationale) \u2014 CRM is the enterprise AI distribution layer on top of the hyperscaler platforms already held. At PE 18.5 and FCFy 12.7%, CRM is the cheapest AI-adjacent software name in the universe by a wide margin. Agentforce ARR reached $800M with 169% YoY growth and 29,000 closed deals; remaining performance obligation stands at $72.4B (+14% YoY), providing revenue visibility. The YTD drawdown of -36.9% and -41.3% from 52-week high reflects enterprise software sentiment, not fundamental deterioration \u2014 RPO and FCF continue growing. CRM now trades at a material discount to MSFT (22.5x) and GOOGL (26.5x) despite comparable or superior FCF yield. The valuation entry point here is specific and time-bounded: if Agentforce ARR accelerates in FY27, the re-rating catalyst is in place. Momentum score is penalized (3/10) for -13.5% 3mo and -36.9% YTD \u2014 no momentum confirmation yet. Position sized conservatively until momentum turns. No prior score \u2014 first scan.",
+      "anti_thesis_risks": "1. Agentforce ARR stalls \u2014 if enterprises delay agentic AI adoption due to ROI uncertainty, the re-rating thesis breaks. 2. Hyperscaler bundling: MSFT Copilot, Google Workspace AI, and Amazon Q directly threaten CRM's enterprise AI moat, consistent with the thesis risk that 'cloud hyperscalers could bundle AI, storage, and security.' 3. Seat-model headwind: as Agentforce replaces human seats, net revenue per customer could compress even with adoption growth. 4. Enterprise software spending softness persists into FY27, causing cRPO to miss and the stock to revisit April lows (~$163).",
+      "size_suggestion_pct": 4,
+      "recommended_action": "watch",
+      "funded_by": "new contributions"
+    },
+    {
+      "ticker": "KB",
+      "name": "KB Financial Group",
+      "thesis_fit_score": 6,
+      "score_delta": null,
+      "factor_scores": {
+        "value": 9,
+        "quality": 6,
+        "momentum": 4
+      },
+      "portfolio_role": "international",
+      "rationale": "Thesis clause: 'EWY (5%) for a structural Korea reform bet.' KB Financial is the largest financial group in South Korea and is a direct, pure-play beneficiary of the Korea Corporate Value-Up program \u2014 the same structural reform thesis underlying EWY. At PE 9.7 and ROE 10.0%, KB is trading at a deep discount to global bank peers, consistent with the 'Korea discount' that the reform program is explicitly designed to close. Adding KB as a single-name complement to EWY allows exposure to the reform catalyst at the company level (where reforms are most directly measured via P/B targets and dividend policy changes) without duplicating broad index exposure. YTD +16.1% shows the reform thesis is beginning to be priced in. Momentum is moderate (-1.3% 1mo) \u2014 no near-term catalyst burning urgency. Note: KB is an ADR with Korean Won FX exposure, additive to the EWY Korea bet \u2014 concentration in Korean assets would increase if both are held. Size conservatively within the single-name 6% cap. No prior score \u2014 first scan.",
+      "anti_thesis_risks": "1. Korea Corporate Value-Up program stalls or is reversed under political pressure \u2014 the primary thesis-break condition. 2. Korean Won depreciation offsets equity gains for USD-denominated returns. 3. Korean banking sector credit quality deteriorates (household debt is elevated), compressing ROE and thesis on quality. 4. EWY already captures ~8% KB weighting, making this additive but partially redundant \u2014 overlapping Korea exposure increases single-country risk.",
+      "size_suggestion_pct": 3,
+      "recommended_action": "watch",
+      "funded_by": "new contributions"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "thesis_fit_score": 6,
+      "score_delta": null,
+      "factor_scores": {
+        "value": 4,
+        "quality": 8,
+        "momentum": 6
+      },
+      "portfolio_role": "AI compute conviction",
+      "rationale": "Thesis clause: 'High-conviction AI/tech compute bet (~40% effective Mag 7)' \u2014 AVGO is the premier custom AI ASIC designer (Google TPUs, Meta's MTIA) and AI networking silicon provider (Tomahawk, Jericho). As hyperscalers held in the portfolio (GOOGL, META, AMZN) increase ASIC-based inference to reduce NVDA dependency, AVGO captures that spend directly. ROE of 37.3% and 3mo momentum of +24.7% are strong quality signals. The key penalty is valuation: PE 60.6 with FCFy of only 1.6% is stretched for a name at -24% off 52w. Value score is penalized (4/10) accordingly \u2014 the thesis fit is strong but the entry price is not compelling relative to TSM (37.8x PE, 31.8% FCFy) or CRM. Overlap with NVDA is meaningful: both are AI silicon plays, and adding AVGO increases AI semiconductor concentration beyond the thesis's already-acknowledged 'AI/tech concentration' risk. Scored 'not_now' until valuation compresses further or FCF yield improves. No prior score \u2014 first scan.",
+      "anti_thesis_risks": "1. Hyperscalers bring custom ASIC design in-house (Apple silicon precedent), disintermediating Broadcom's ASIC revenue. 2. VMware integration (acquired 2023) execution risk \u2014 enterprise software churn could drag on margins. 3. At PE 60.6, any AI capex growth deceleration produces multiple compression disproportionate to fundamental change. 4. Direct overlap with NVDA in the portfolio increases AI semiconductor concentration risk, which the thesis explicitly acknowledges as accepted but bounded.",
+      "size_suggestion_pct": 4,
+      "recommended_action": "not_now",
+      "funded_by": "none"
+    }
+  ],
+  "adjacent": [
+    {
+      "anchor": "NVDA",
+      "candidate": "TSM",
+      "thesis_fit_score": 9,
+      "note": "TSM is NVDA's sole manufacturer of Hopper and Blackwell GPUs at advanced nodes. As NVDA's AI compute monopoly thesis compounds, TSMC captures the foundry margin on every wafer. Adding TSM creates upstream AI supply chain exposure without duplicating NVDA's software/CUDA moat. These are complementary, not substitutive. HPC is 61% of TSMC revenue \u2014 the correlation to NVDA demand is structural."
+    },
+    {
+      "anchor": "AMZN",
+      "candidate": "AVGO",
+      "thesis_fit_score": 6,
+      "note": "AMZN's AWS Trainium/Inferentia custom chips are co-designed with Broadcom-adjacent silicon partners. More directly, META and GOOGL (also held) are AVGO's two largest ASIC customers. AVGO adjacency is a bet that hyperscaler ASIC spend \u2014 concentrated in held names \u2014 flows to Broadcom's networking and custom chip revenue. Concentration caveat: adding AVGO when NVDA, GOOGL, META, and AMZN are all held creates a 5-way AI silicon dependency chain. Note this carefully before sizing."
+    },
+    {
+      "anchor": "MSFT",
+      "candidate": "IBM",
+      "thesis_fit_score": 6,
+      "note": "IBM (PE 24.0, FCFy 5.1%, ROE 35.8%) sits at the intersection of MSFT's enterprise AI distribution thesis and QTUM's quantum compute thematic. IBM has the most commercially advanced quantum roadmap (IBM Quantum Network, 1000+ qubit systems) and an enterprise AI consulting arm (watsonx) targeting the same Fortune 500 customers as MSFT Copilot. At -17.6% off 52w and YTD -5.8%, valuation is reasonable. Not a top-5 candidate given lower thesis specificity, but a meaningful adjacent name for the quantum infrastructure sleeve."
+    },
+    {
+      "anchor": "EWY",
+      "candidate": "KB",
+      "thesis_fit_score": 6,
+      "note": "KB Financial is a direct pure-play on the Korea Corporate Value-Up reform that EWY captures in diversified ETF form. EWY allocates ~8% to KB already, so adding KB is an intentional overweight to the reform-driven financial sector \u2014 appropriate only if Minho has high conviction on the banking reform channel specifically. Reduces diversification within the Korea bet but increases exposure to the most directly policy-sensitive sector."
+    }
+  ],
+  "etf_replacements": [
+    {
+      "holding": "GLD",
+      "alternative": "GLDM",
+      "current_er_pct": 0.4,
+      "alt_er_pct": 0.1,
+      "annual_saving_estimate_usd": "Approximately $15 per $5,000 notional (0.30% ER delta on GLD position). Scale to actual GLD position value: saving = position_value \u00d7 0.003.",
+      "tracking_error_note": "GLDM and GLD both track LBMA Gold Price PM; same index, same underlying. This is a pure cost swap with no index methodology difference. Return differential is essentially zero (both hold physical gold); the ER saving of 0.30% accrues fully to the holder. Only consideration: GLD has higher liquidity and tighter bid-ask spreads \u2014 at large position sizes (>$500K), the spread improvement may partially offset the ER advantage. At Minho's portfolio scale, GLDM is the rational choice."
+    },
+    {
+      "holding": "VXUS",
+      "alternative": "IXUS",
+      "current_er_pct": 0.07,
+      "alt_er_pct": 0.07,
+      "annual_saving_estimate_usd": 0,
+      "tracking_error_note": "VXUS tracks FTSE Global All Cap ex US Index; IXUS tracks MSCI ACWI ex USA IMI Index. These are DIFFERENT indices with different country/sector weights and small-cap inclusion methodologies. Per the candidate data this week, 3mo returns are nearly identical (VXUS +13.2%, IXUS +13.6%) and ER is the same at 0.07%. No swap warranted \u2014 identical cost, different index, no improvement available. Flag for monitoring only."
+    },
+    {
+      "holding": "EWY",
+      "alternative": "FLKR",
+      "current_er_pct": 0.59,
+      "alt_er_pct": 0.09,
+      "annual_saving_estimate_usd": "Approximately $25 per $5,000 notional (0.50% ER delta). Scale: saving = EWY_position_value \u00d7 0.005.",
+      "tracking_error_note": "CRITICAL \u2014 DIFFERENT INDICES. EWY tracks the MSCI Korea 25/50 Index (large/mid-cap, capped). FLKR tracks the FTSE Korea 30/18 Capped Index. These differ in constituent selection, free-float methodology, and capping rules. The gross index return differential between MSCI Korea and FTSE Korea has historically ranged from -1% to +2% annually. The 0.50% ER saving may be fully offset or exceeded by index return differences in any given year. DO NOT swap on ER alone \u2014 the dashboard must compute 5-year net return differential (gross index return + ER) before any decision. Additionally, EWY's thesis is tied to Korea reform and Samsung/SK Hynix exposure \u2014 verify FLKR holds equivalent Samsung/Hynix weights before proceeding."
+    }
+  ],
+  "consolidation": [
+    {
+      "proposal": "Reconcile DRAM target weight (13% listed) against the 12% portfolio cap",
+      "rationale": "The current holdings table lists DRAM at a 13% target with a 12% portfolio cap \u2014 this is an internal inconsistency that violates Discipline Rule 4 ('Position cap: 12% of portfolio'). At 13% target, DRAM would be the largest single position in the portfolio, exceeding every cap including the AMZN-specific 8% exception. This is not a consolidation trade but a required governance correction. The target should be set to \u226412% to comply with stated rules. If the intent was to hold 13% in AI memory exposure split between DRAM ETF and another vehicle, that should be documented explicitly as a sleeve allocation, not a single-position target.",
+      "trade_offs": "Reducing target from 13% to 12% requires either accepting 1% of contributions to redirect elsewhere (low friction) or no action if current actual weight is already \u226412%. No sell required \u2014 rebalance via contribution flow per Discipline Rule 2."
+    },
+    {
+      "proposal": "Consider collapsing AVUS (12% target) + AVUV (11% target) into a single Avantis vehicle (e.g., AVGE) if factor overlap is acceptable",
+      "rationale": "AVUS (US factor-tilted total market) and AVUV (US small-cap value) together constitute 23% of the portfolio across two Avantis vehicles. AVGE (Avantis All Equity Markets ETF) provides global factor exposure including US small-cap value and international developed, which would partially subsume VXUS as well. This would reduce line-item count and rebalancing complexity. However, the thesis places AVUS and AVUV in Roth specifically for tax efficiency on factor-driven turnover distributions \u2014 any consolidation must remain within the Roth account.",
+      "trade_offs": "AVGE includes international developed factor exposure that partially overlaps VXUS; this creates index overlap rather than eliminating it. AVUV's standalone small-cap value tilt (the thesis's 'strongest factor evidence' bet) would be diluted inside AVGE's blended allocation. AVGE ER (~0.23%) is slightly higher than AVUV (0.25%) and AVUS (0.15%) blended \u2014 not a cost improvement. Recommend keeping separate unless simplicity is a stated priority. Thesis currently distinguishes the two positions for specific academic factor reasons ('Fama-French + profitability \u2014 strongest factor evidence') that AVGE does not preserve in isolation."
+    }
+  ]
+}
